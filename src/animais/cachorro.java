@@ -1,16 +1,11 @@
 package animais;
 
-public class cachorro {
+public class cachorro extends animal {
     //atributos
 
     static int numeroDeCachorros;
 
-    private String nome;
-    private String cor;
-    private int altura;
-    private double peso;
     private int tamanhoDoRabo;
-    private String estadoDeEspirito;
     
     //construtores
 
@@ -72,11 +67,6 @@ public class cachorro {
         this.tamanhoDoRabo = tamanhoDoRabo;
     };
 
-    public void comer(){};
-
-    public void latir(){
-        System.out.println("AU AU");
-    };
 
     public String pegar(){
         return "Bolinha";
@@ -113,6 +103,10 @@ public class cachorro {
 
     public String toString() {
         return "cachorro{" + "nome='" + nome + '\'' + '}';
+    };
+
+    public void soar() {
+        System.out.println("Au Au");
     };
 
 }
