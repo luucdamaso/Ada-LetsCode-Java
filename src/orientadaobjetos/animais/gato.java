@@ -1,4 +1,4 @@
-package animais;
+package orientadaobjetos.animais;
 
 public class gato extends animal {
     static int numeroDeGatos;
@@ -13,8 +13,6 @@ public class gato extends animal {
 
         numeroDeGatos ++;
     };
-
-    
 
     public String toString() {
         return "gato{" + "nome='" + nome + '\'' + '}';

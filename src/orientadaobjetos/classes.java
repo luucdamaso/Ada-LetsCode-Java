@@ -1,24 +1,32 @@
 package orientadaobjetos;
 
-import animais.cachorro;
-import animais.passaro;
-import animais.gato;
+import orientadaobjetos.animais.animal;
+import orientadaobjetos.animais.cachorro;
+import orientadaobjetos.animais.gato;
+import orientadaobjetos.animais.passaro;
+import orientadaobjetos.lojas.petshop;
 
 public class classes {
     public static void main(String[] args) {
-        cachorro cachorro1 = new cachorro("Chopper", "laranja", 55, 15.2, 5, "nada");
-
-        cachorro cachorro2 = new cachorro("R2D2", "laranja", 55, 15.2, 5, "nada");
-
-        passaro passaro1 = new passaro("falcon", "branco", 5, 0.2, "nada");
 
         gato gato1 = new gato("Alex", "dourado", 15, 9.2, "nada");
 
+        animal gato2 = new gato("frajola", "preto", 15, 5.5, "nada");
+
+        cachorro cachorro1 = new cachorro("Atila", "preto", 22, 15.2, 7, "nada");
+
+        animal passaro1 = new passaro("falcon", "branco", 5, 0.200, "nada");
 
         cachorro1.soar();
-        cachorro2.soar();
-        passaro1.soar();
         gato1.soar();
+        gato2.soar();
+        passaro1.soar();
+
+        petshop petshop = new petshop();
+
+        petshop.deixarNoHotel(cachorro1);
+        System.out.println(cachorro1.getestadoDeEspirito());
+
 
         // System.out.println("O cachorro pegou uma " + cachorro1.pegar());
 

@@ -1,4 +1,4 @@
-package animais;
+package orientadaobjetos.animais;
 
 public class cachorro extends animal {
     //atributos
@@ -27,38 +27,6 @@ public class cachorro extends animal {
         return numeroDeCachorros;
     };
 
-    public String getnome(){
-        return this.nome;
-    };
-
-    public void setNome(String nome){
-        this.nome = nome;
-    };
-
-    public String getcor(){
-        return this.cor;
-    };
-
-    public void setcor(String cor){
-        this.cor = cor;
-    };
-
-    public int getaltura(){
-        return this.altura;
-    };
-
-    public void setaltura(int altura){
-        this.altura = altura;
-    };
-
-    public double getpeso(){
-        return this.peso;
-    };
-
-    public void setpeso(double peso){
-        this.peso = peso;
-    };
-
     public int gettamanhoDoRabo(){
         return this.tamanhoDoRabo;
     };
@@ -66,7 +34,6 @@ public class cachorro extends animal {
     public void settamanhoDoRabo(int tamanhoDoRabo){
         this.tamanhoDoRabo = tamanhoDoRabo;
     };
-
 
     public String pegar(){
         return "Bolinha";
